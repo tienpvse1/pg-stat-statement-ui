@@ -18,6 +18,7 @@ Thumbs.db
 .env.*
 !.env.example
 !.env.test
+postgresql.conf
 
 # Vite
 vite.config.js.timestamp-*
