@@ -24,6 +24,9 @@ export default ts.config(
 	},
 	{
 		files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],
+		rules: {
+			'no-unused-vars': 'error'
+		},
 		languageOptions: {
 			parserOptions: {
 				projectService: true,
