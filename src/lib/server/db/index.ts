@@ -1,10 +1,10 @@
-import { Pool } from 'pg';
+import pg from 'pg';
 import { Kysely, PostgresDialect } from 'kysely';
 import { env } from '$env/dynamic/private';
 import type { DB } from './db';
 
 const dialect = new PostgresDialect({
-	pool: new Pool({
+	pool: new pg.Pool({
 		user: env.POSGTGRES_USER,
 		password: env.POSTGRES_PASSWORD,
 		port: +env.POSTGRES_PORT,

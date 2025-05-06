@@ -1,5 +1,7 @@
 <script lang="ts">
+	import { read } from 'fs';
 	let { data } = $props();
+	read(1, console.log);
 </script>
 
 <h1>Welcome to SvelteKit</h1>
